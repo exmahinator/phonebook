@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { addContact } from 'components/redux/contacts/contactsOperations';
+import { addContact } from '../redux/contacts/contactsOperations';
 import {
   ContactForm,
   ContactButton,
@@ -8,8 +8,8 @@ import {
   AuthLabel,
   AuthSubContainer,
   AuthTitle,
-} from 'components/ui';
-import { selectContacts } from 'components/redux/contacts/contactsSelectors';
+} from '../ui';
+import { selectContacts } from '../redux/contacts/contactsSelectors';
 
 const HandleForm = () => {
   const contacts = useSelector(selectContacts);
@@ -70,7 +70,7 @@ const HandleForm = () => {
             value={name}
             onChange={onInput}
             id="inputNameField"
-            placeholder="Needs to add the name of friend"
+            placeholder="Needs to add the name of friend..."
             required
           />
         </AuthSubContainer>
@@ -87,7 +87,7 @@ const HandleForm = () => {
             value={number}
             onChange={onInput}
             id="inputNumberField"
-            placeholder="and his number on the Earth"
+            placeholder="and his number at the end!"
             required
           />
         </AuthSubContainer>

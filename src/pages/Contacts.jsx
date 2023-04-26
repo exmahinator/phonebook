@@ -1,11 +1,11 @@
-import PhoneBook from 'components/contactList/PhoneBook';
-import HandleForm from 'components/handleForm';
-import FilterContacts from 'components/filterContacts';
+import PhoneBook from '../components/contactList/PhoneBook';
+import HandleForm from '../components/handleForm';
+import FilterContacts from '../components/filterContacts';
 import {
   ContactsContainer,
   ContactsSubContainer,
   ContactsBackgroundContainer,
-} from 'components/ui';
+} from '../components/ui';
 
 const Contacts = () => {
   return (

@@ -7,16 +7,16 @@ import {
   InfoContainer,
   ContactList,
   ContactsSubTitle,
-} from 'components/ui';
+} from '../ui';
 import {
   deleteContact,
   fetchContacts,
-} from 'components/redux/contacts/contactsOperations';
+} from '../redux/contacts/contactsOperations';
 import {
   selectContactsError,
   selectContactsLoading,
   selectVisibleContacts,
-} from 'components/redux/contacts/contactsSelectors';
+} from '../redux/contacts/contactsSelectors';
 import { useEffect } from 'react';
 
 const PhoneBook = () => {

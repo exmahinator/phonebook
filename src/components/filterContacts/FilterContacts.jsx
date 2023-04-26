@@ -1,8 +1,8 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { filterContacts } from 'components/redux/contacts/contactsSlice';
-import { ContactFilter } from 'components/ui';
-import { selectContactsFilter } from 'components/redux/contacts/contactsSelectors';
-import { AuthLabel, AuthInput } from 'components/ui';
+import { filterContacts } from '../redux/contacts/contactsSlice';
+import { ContactFilter } from '../ui';
+import { selectContactsFilter } from '../redux/contacts/contactsSelectors';
+import { AuthLabel, AuthInput } from '../ui';
 
 const FilterContacts = () => {
   const filter = useSelector(selectContactsFilter);

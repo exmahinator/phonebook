@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { logIn } from 'components/redux/auth/authOperations';
+import { logIn } from '../redux/auth/authOperations';
 import {
   AuthContainer,
   AuthForm,
@@ -9,7 +9,7 @@ import {
   AuthLabel,
   AuthInput,
   AuthBackground,
-} from 'components/ui';
+} from '../ui';
 
 const LoginForm = () => {
   const dispatch = useDispatch();

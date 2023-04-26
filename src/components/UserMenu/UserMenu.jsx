@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
-import { logOut } from 'components/redux/auth/authOperations';
+import { logOut } from '../redux/auth/authOperations';
 import { useAuth } from '../hooks';
-import { PageAuthButton, UserName } from 'components/ui';
+import { PageAuthButton, UserName } from '../ui';
 
 const UserMenu = () => {
   const dispatch = useDispatch();

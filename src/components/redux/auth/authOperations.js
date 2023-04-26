@@ -1,7 +1,7 @@
-import axios from 'config';
+import axios from '../../../config.js';
 
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { setAuthHeader, clearAuthHeader } from 'config';
+import { setAuthHeader, clearAuthHeader } from '../../../config.js';
 
 export const register = createAsyncThunk(
   'auth/register',

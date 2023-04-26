@@ -1,4 +1,4 @@
-import { NavigationLink, PageAuth } from 'components/ui';
+import { NavigationLink, PageAuth } from '../ui';
 
 const AuthNav = () => {
   return (

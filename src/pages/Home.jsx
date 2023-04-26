@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
-import { logOut } from 'components/redux/auth/authOperations';
-import { useAuth } from 'components/hooks';
+import { logOut } from '../components/redux/auth/authOperations';
+import { useAuth } from '../components/hooks';
 import {
   HomePageHeader,
   HomePageContainer,
@@ -8,7 +8,7 @@ import {
   HomePageAccent,
   HomePageButton,
   HomePageLink,
-} from 'components/ui';
+} from '../components/ui';
 
 const Home = () => {
   const { user, isLoggedIn } = useAuth();
@@ -30,7 +30,7 @@ const Home = () => {
             <>
               <span>stranger! Please, come in! Take your time to make </span>
               <HomePageLink to="/login">log-in</HomePageLink>
-              <span> !</span>
+              <span>!</span>
             </>
           )}
         </HomePageText>
@@ -45,7 +45,7 @@ const Home = () => {
             </>
           ) : (
             <>
-              <span>If you're here for the first time - check </span>
+              <span>If you're here for the first time - press </span>
               <HomePageLink to="/register">register</HomePageLink>
               <span> and you'll fly!</span>
             </>
